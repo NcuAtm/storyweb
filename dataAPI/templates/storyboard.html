@@ -1,0 +1,27 @@
+<form action="." method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <div>
+            <label for="deviceModalMac" class="col-form-label">If the advanced search does not match, no results will be returned!</label><br>
+            <label for="deviceModalMac" class="col-form-label">Username:</label>
+            <input type="text" class="form-control" id="deviceModalMac" name="username" maxlength="100" required/><br>
+            <label for="deviceModalDeviceName" class="col-form-label">Password:&nbsp;</label>
+            <input type="password" class="form-control device-modal-item" id="deviceModalDeviceName" name="password" maxlength="100" required/><p>
+
+            <label for="deviceModalMac" class="col-form-label">advanced search:</label><br>
+            <label for="deviceModalMac" class="col-form-label">Last ?? data:&nbsp;&nbsp;</label>
+            <input type="number" class="form-control" id="deviceModalMac" name="last" maxlength="100" required/><br>
+            <label for="deviceModalMac" class="col-form-label">begining time:</label>
+            <input type="date" class="form-control" id="deviceModalMac" name="bd" maxlength="100" required/>
+            <input type="time" class="form-control" id="deviceModalMac" name="bt" maxlength="100" required/><br>
+            <label for="deviceModalMac" class="col-form-label">ending time:&nbsp;&nbsp;</label>
+            <input type="date" class="form-control" id="deviceModalMac" name="ed" maxlength="100" required/>
+            <input type="time" class="form-control" id="deviceModalMac" name="et" maxlength="100" required/><br>
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </div>
+</form>
